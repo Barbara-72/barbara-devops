@@ -1,0 +1,7 @@
+FROM registry.sourcesense.com/barbara/tomcat8:latest
+
+MAINTAINER barbara.ammannati@sourcesense.com
+
+COPY /var/lib/jenkins/workspace/warmaven/target/sparkjava-hello-world-1.0-SNAPSHOT.war /opt/tomcat/webapps/
+
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]
