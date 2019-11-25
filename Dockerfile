@@ -15,6 +15,6 @@ WORKDIR /opt/tomcat/webapps
 RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
 # COPY /var/lib/jenkins/workspace/warmaven/target/sparkjava-hello-world-1.0-SNAPSHOT.war /opt/tomcat/webapps/
 
-EXPOSE 8080
+EXPOSE 8082
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
